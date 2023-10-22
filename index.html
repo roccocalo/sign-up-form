@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Sign-Up-Form</title>
+</head>
+
+<body>
+    <div class="sign-up-Container">
+        <div class="main-cont">
+        <div class="photo">
+            <img src="./images/infograp.png" alt="Agency Logos" id="photo">
+        </div>
+        <div class="user-info">
+            <h1 class="title">Sign Up</h1>
+            <form spellcheck="false" autocomplete="off">
+                <div class="profile-form">
+                    <label for="name"><img src="./images/profile.svg" alt="profile logo" class="img-profile"></label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="email-form">
+                    <label for="email"><img src="./images/mail.svg" alt="mail logo" class="img-email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="password-form">
+                    <label for="password"><img src="./images/password.svg" alt="password logo"
+                            class="img-password"></label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="Confirm-password-form">
+                    <label for="conf-password"><img src="./images/password.svg" alt="password logo"
+                            class="img-password"></label>
+                    <input type="password" name="conf-password" id="conf-password" placeholder="Confirm password"
+                        required>
+                </div>
+            </form>
+            <div class="policy">
+                <p id="policy">By signing up, you are agreeing to our
+                    <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms & Conditions</a> and
+                    <a href="https://en.wikipedia.org/wiki/Policy">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="button">
+                <button type="submit">Continue</button>
+            </div>
+            <div class="already-account">
+                <p class="al-account">Already have an account? <a href="https://en.wikipedia.org/wiki/Login">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="credit">Website made by </div>
+        <img src="./images/github-icon.png" alt="github logo" class="git-logo">
+        <a href="https://github.com/roccocalo">Rocco Calò</a>     
+    </div>
+
+
+</body>
+
+</html>
