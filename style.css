@@ -1,20 +1,17 @@
 body {
     background-image: url(./images/background.png);
-    background-size: cover ;
+    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
-    
 }
 
-.sign-up-Container {   
+.sign-up-Container {
     margin-top: auto;
-   
 }
 
 .main-cont {
@@ -23,19 +20,16 @@ body {
     align-items: center;
     margin-top: auto;
     gap: 50px;
-    
-   
-    
 }
 
 .photo {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #photo {
     width: 500px;
-    caret-color: transparent; 
+    caret-color: transparent;
 }
 
 form {
@@ -49,19 +43,23 @@ form {
 }
 
 input {
-    width: 90%;
+    width: 89%;
     height: 25px;
     padding: 7px;
-    background-color: rgba(253,253,253,255);
+    background-color: rgba(253, 253, 253, 255);
     font-size: 100%;
     outline: none;
     border: none;
     border-radius: 20px;
 }
 
+input:focus {
+    border: 1px solid #5a7caf;
+}
+
+
 label img {
-        vertical-align: middle;
-        
+    vertical-align: middle;
 }
 
 button {
@@ -70,8 +68,10 @@ button {
     padding: 5px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(157,177,197);
-
+    background-color: rgb(157, 177, 197);
+    font-weight: bold;
+    font-size: large;
+    color: aliceblue;
 }
 
 .al-account {
@@ -82,19 +82,21 @@ button {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    color: rgba(185, 59, 66, 255);
 }
 
 a {
     text-decoration: none;
-    color: rgba(89,121,157,255);
+    color: rgba(89, 121, 157, 255);
 }
+
 .footer {
     display: flex;
     margin-top: auto;
     justify-content: center;
-    align-content: center ;
+    align-content: center;
     gap: 8px;
-    color: rgba(89,121,157,255);
+    color: rgba(89, 121, 157, 255);
 }
 
 a:hover {
@@ -104,4 +106,28 @@ a:hover {
 
 img.git-logo {
     height: 20px;
+}
+
+
+@media all and (max-width: 480px) {
+    .main-cont {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #photo {
+        width: 300px;
+        caret-color: transparent;
+    }
+
+    .user-info {
+        width: 400px;
+        text-align: center;
+    }
+
+    button,
+    input {
+        width: 85%;
+    }
+
 }
